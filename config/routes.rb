@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   resources :quizzes do
     resources :questions
   end
+
+  resources :questions do
+    resources :answers, shallow: true
+  end
   root 'home#index'
 end

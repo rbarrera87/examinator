@@ -1,0 +1,12 @@
+<div class="main main-raised" style="margin: 0 30px 0 30px">
+  <div class="section" style="padding-top: 0px">
+    <div class="container">
+      <h1>Edita la pregunta</h1>
+
+      <%= render 'form', question: @question, quiz: @question.quiz %>
+
+      <%= link_to 'Show', @question %> |
+      <%= link_to 'Back', quiz_questions_path(@question.quiz) %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<%= form_with(model: answer, url: question_answers_url(question), local: true) do |form| %>
+  <% if answer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(answer.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% answer.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <div class="field">
+      <%= form.label :respuesta %>
+      <%= form.text_field :text, type: 'text', class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= form.label :correcta %>
+      <%= form.check_box :correct, type: 'text', class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit('Send', class: 'btn btn-primary') %>
+  </div>
+<% end %>

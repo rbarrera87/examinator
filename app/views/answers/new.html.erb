@@ -1,0 +1,10 @@
+<div class="main main-raised" style="margin: 0 30px 0 30px">
+  <div class="section" style="padding-top: 0px">
+    <div class="container">
+      <h1>Nueva respuesta</h1>
+      <%= render 'form', answer: @answer, question: @answer.question %>
+
+      <%= link_to 'Back', question_answers_path %>
+    </div>
+  </div>
+</div>

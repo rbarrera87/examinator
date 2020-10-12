@@ -8,12 +8,14 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-// require_tree("material-kit/assets/js/core")
-// import "bootstrap-material-design"
+import "bootstrap"
 
-// import "material-kit/assets/js/material-kit"
+// require_tree("material-kit/assets/js/core")
+import "bootstrap-material-design"
+
+import "material-kit/assets/js/material-kit"
 //= require_tree("material-kit/assets/js/core")
-require("material-kit/assets/js/material-kit").start()
+// require("material-kit/assets/js/material-kit").start()
 import "../stylesheets/application"
 
 
